@@ -1,0 +1,266 @@
+{
+    "name": "轻小说文库",
+    "url": "www.wenku8.net",
+    "version": 100,
+    "search": {
+        "url": "https://www.wenku8.net/modules/article/search.php?searchtype=articlename&searchkey=${key}&page=${page}",
+        "charset": "utf-8",
+        "list": "table.grid > tbdody > tr > td >div",
+        "name": "div > b > a",
+        "author": "div > p",
+        "cover": "div > a > img@attr->src",
+        "summary": "div > p",
+        "detail": "div > a@attr->href"
+    },
+    "detail": {
+        "name": "div.main > div > div > div > table > tbody > tr > td > table > tbody > tr > td > span > b",
+        "author": "div.main > div > div > div > table > tbody > tr > td",
+        "cover": "div.main > div > div > div > table > tbody > tr > td > img@attr->src",
+        "summary": "div.main > div > div > div > table > tbody > tr > td > span",
+        "status": "div.main > div > div > div > table > tbody > tr > td",
+        "update": "div.main > div > div > div > table > tbody > tr > td > span",
+        "tags": "div.main > div > div > div > table > tbody > tr > td > span.hottext > b",
+        "lastChapter": "div.main > div > div > div > table > tbody > tr > td > span > a",
+        "catalog": "div.main > div > div > div > div > div > span > fieldset > div > a@attr->href"
+    },
+    "catalog": {
+        "list": "table.css > tbody > tr > td.vcss",
+        "orderBy": 0,
+        "booklet": {
+            "name": "table.css > tbody > tr > td.vcss",
+            "list": "table.css > tbody > tr > td.css"
+        },
+        "name": "table.css > tbody > tr > td.css > a",
+        "chapter": "table.css > tbody > tr > td.css > a@attr->href",
+        "page": ""
+    },
+    "chapter": {
+        "content": "body > div >div",
+        "purify": [],
+        "page": ""
+    },
+    "auth": {
+        "login": "https://www.wenku8.net/login.php",
+        "cookie": ".wenku8.net",
+        "verify": "https://www.wenku8.net/index.php",
+        "logged": "body > div > div > div > div > div > ul > li:nth-child(1) > a@equal->退出"
+    },
+    "rank": [
+        {
+            "title": "轻小说列表",
+            "page": 1,
+            "size": 20,
+            "url": "https://www.wenku8.net/modules/article/articlelist.php?initial=${key}&page=${page}",
+            "categories": [
+                {
+                    "value": "0-9",
+                    "key": "1"
+                },
+                {
+                    "value": "A",
+                    "key": "A"
+                },
+                {
+                    "value": "B",
+                    "key": "B"
+                },
+                {
+                    "value": "C",
+                    "key": "C"
+                },
+                {
+                    "value": "D",
+                    "key": "D"
+                },
+                {
+                    "value": "E",
+                    "key": "E"
+                },
+                {
+                    "value": "F",
+                    "key": "F"
+                },
+                {
+                    "value": "G",
+                    "key": "G"
+                },
+                {
+                    "value": "H",
+                    "key": "H"
+                },
+                {
+                    "value": "I",
+                    "key": "I"
+                },
+                {
+                    "value": "J",
+                    "key": "J"
+                },
+                {
+                    "value": "K",
+                    "key": "K"
+                },
+                {
+                    "value": "L",
+                    "key": "L"
+                },
+                {
+                    "value": "M",
+                    "key": "M"
+                },
+                {
+                    "value": "N",
+                    "key": "N"
+                },
+                {
+                    "value": "O",
+                    "key": "O"
+                },
+                {
+                    "value": "P",
+                    "key": "P"
+                },
+                {
+                    "value": "Q",
+                    "key": "Q"
+                },
+                {
+                    "value": "R",
+                    "key": "R"
+                },
+                {
+                    "value": "S",
+                    "key": "S"
+                },
+                {
+                    "value": "T",
+                    "key": "T"
+                },
+                {
+                    "value": "U",
+                    "key": "U"
+                },
+                {
+                    "value": "V",
+                    "key": "V"
+                },
+                {
+                    "value": "W",
+                    "key": "W"
+                },
+                {
+                    "value": "X",
+                    "key": "X"
+                },
+                {
+                    "value": "Y",
+                    "key": "Y"
+                },
+                {
+                    "value": "Z",
+                    "key": "Z"
+                }
+            ]
+        },
+        {
+            "title": "排行榜",
+            "page": 1,
+            "size": 20,
+            "url": "https://www.wenku8.net/modules/article/toplist.php?sort=${key}&page=${page}",
+            "categories": [
+                {
+                    "value": "总排行榜",
+                    "key": "allvisit"
+                },
+                {
+                    "value": "已动画化",
+                    "key": "anime"
+                },
+                {
+                    "value": "最近更新",
+                    "key": "lastupdate"
+                },
+                {
+                    "value": "最新入库",
+                    "key": "postdate"
+                }
+            ]
+        },
+        {
+            "title": "分类阅读",
+            "page": 1,
+            "size": 20,
+            "url": "https://www.wenku8.net/modules/article/articlelist.php?class=${key}&page=${page}",
+            "categories": [
+                {
+                    "value": "电击文库",
+                    "key": "1"
+                },
+                {
+                    "value": "富士见文库",
+                    "key": "2"
+                },
+                {
+                    "value": "角川文库",
+                    "key": "3"
+                },
+                {
+                    "value": "MF文库J",
+                    "key": "4"
+                },
+                {
+                    "value": "Fami通文库",
+                    "key": "5"
+                },
+                {
+                    "value": "GA文库",
+                    "key": "6"
+                },
+                {
+                    "value": "HJ文库",
+                    "key": "7"
+                },
+                {
+                    "value": "一迅社",
+                    "key": "8"
+                },
+                {
+                    "value": "集英社",
+                    "key": "9"
+                },
+                {
+                    "value": "小学馆",
+                    "key": "10"
+                },
+                {
+                    "value": "讲谈社",
+                    "key": "11"
+                },
+                {
+                    "value": "少女文库",
+                    "key": "12"
+                },
+                {
+                    "value": "其他文库",
+                    "key": "13"
+                },
+                {
+                    "value": "游戏剧本",
+                    "key": "14"
+                }
+            ]
+        },
+        {
+            "title": "完结轻小说列表",
+            "page": 1,
+            "size": 20,
+            "url": "https://www.wenku8.net/modules/article/articlelist.php?fullflag=1",
+            "categories": [
+                {
+                    "value": "",
+                    "key": ""
+                }
+            ]
+        }
+    ]
+}
