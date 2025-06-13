@@ -5,10 +5,10 @@
     "search": {
         "url": "https://www.youduzw.com/sa/all-${key}-${page}.html",
         "list": "div#imgload >ul",
-        "name": "li > div > a > h2",
-        "author": "li > div > p > strong > span",
-        "cover": "li > div > a > i > img@attr->_src",
-        "detail": "li > div > a@attr->href"
+        "name": "div > a > h2",
+        "author": "div > p > strong > span",
+        "cover": "div > a > i > img@attr->_src",
+        "detail": "div > a@attr->href"
     },
     "detail": {
         "name": "meta[property=og:novel:book_name]@attr->content",
