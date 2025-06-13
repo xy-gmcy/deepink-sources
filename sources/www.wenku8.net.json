@@ -3,7 +3,7 @@
     "url": "www.wenku8.net",
     "version": 100,
     "search": {
-        "url": "https://www.wenku8.net/modules/article/search.php?searchtype=articlename&searchkey=${key}&page=${page}",
+        "url": "https://www.wenku8.net/modules/article/search.php?searchtype=articlename&searchkey=${key}&page=${page}@header->cookie:PHPSESSID=m8121p9gb4r7gf60gj5aohmh6fjjp6p9",
         "charset": "gbk",
         "list": "#content > table > tbody > tr > td > div",
         "name": "b",
@@ -45,6 +45,10 @@
             "size": 20,
             "url": "https://www.wenku8.net/modules/article/articlelist.php?initial=${key}&page=${page}",
             "categories": [
+                {
+                    "value": "全部",
+                    "key": ""
+                },
                 {
                     "value": "0-9",
                     "key": "1"
@@ -222,6 +226,10 @@
             "url": "https://www.wenku8.net/modules/article/articlelist.php?class=${key}&page=${page}",
             "categories": [
                 {
+                    "value": "全部轻小说",
+                    "key": ""
+                },
+                {
                     "value": "电击文库",
                     "key": "1"
                 },
@@ -283,14 +291,121 @@
             "title": "完结轻小说列表",
             "page": 1,
             "size": 20,
-            "url": "https://www.wenku8.net/modules/article/articlelist.php?fullflag=1&page=${page}",
+            "url": "https://www.wenku8.net/modules/article/articlelist.php?fullflag=1&initial=${key}&page=${page}",
             "categories": [
                 {
-                    "value": "",
+                    "value": "全部",
                     "key": ""
+                },
+                {
+                    "value": "0-9",
+                    "key": "1"
+                },
+                {
+                    "value": "A",
+                    "key": "A"
+                },
+                {
+                    "value": "B",
+                    "key": "B"
+                },
+                {
+                    "value": "C",
+                    "key": "C"
+                },
+                {
+                    "value": "D",
+                    "key": "D"
+                },
+                {
+                    "value": "E",
+                    "key": "E"
+                },
+                {
+                    "value": "F",
+                    "key": "F"
+                },
+                {
+                    "value": "G",
+                    "key": "G"
+                },
+                {
+                    "value": "H",
+                    "key": "H"
+                },
+                {
+                    "value": "I",
+                    "key": "I"
+                },
+                {
+                    "value": "J",
+                    "key": "J"
+                },
+                {
+                    "value": "K",
+                    "key": "K"
+                },
+                {
+                    "value": "L",
+                    "key": "L"
+                },
+                {
+                    "value": "M",
+                    "key": "M"
+                },
+                {
+                    "value": "N",
+                    "key": "N"
+                },
+                {
+                    "value": "O",
+                    "key": "O"
+                },
+                {
+                    "value": "P",
+                    "key": "P"
+                },
+                {
+                    "value": "Q",
+                    "key": "Q"
+                },
+                {
+                    "value": "R",
+                    "key": "R"
+                },
+                {
+                    "value": "S",
+                    "key": "S"
+                },
+                {
+                    "value": "T",
+                    "key": "T"
+                },
+                {
+                    "value": "U",
+                    "key": "U"
+                },
+                {
+                    "value": "V",
+                    "key": "V"
+                },
+                {
+                    "value": "W",
+                    "key": "W"
+                },
+                {
+                    "value": "X",
+                    "key": "X"
+                },
+                {
+                    "value": "Y",
+                    "key": "Y"
+                },
+                {
+                    "value": "Z",
+                    "key": "Z"
                 }
             ]
         }
     ]
-}
 }
