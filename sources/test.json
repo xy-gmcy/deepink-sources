@@ -5,8 +5,8 @@
     "search": {
         "url": "https://www.esjzone.one/tags/${key}/",
         "charset": "utf-8",
-        "list": "div.col-xl-9 > div.row>div.col-lg-3.col-md-4.col-sm-3.col-xs-6",
-        "name": " div.card.mb-30 > div.card-body > h5.card-title > a",
+        "list": "div.col-xl-9 > div.row>div.col-lg-3",
+        "name": " div > div > h5 > a",
         "author": "div>div.card-body > div.card-author > a",
         "summary": "",
         "cover": "div>div>a>div>div>div@attr->data-src",
