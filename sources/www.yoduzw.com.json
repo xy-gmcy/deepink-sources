@@ -1,0 +1,160 @@
+{
+    "name": "有度中文网",
+    "url": "www.yoduzw.com",
+    "version": 100,
+    "search": {
+        "url": "https://www.yoduzw.com/s@post->searchkey=${key}&&searchtype=all",
+        "charset": "utf-8",
+        "list": "li#hism",
+        "name": "h3 > a",
+        "author": "em > span:nth-child(4)",
+        "cover": "a > img@attr->_src",
+        "detail": "h3 > a"
+    },
+    "detail": {
+        "name": "meta[property=og:novel:book_name]@attr->content",
+        "author": "meta[property=og:novel:author]@attr->content",
+        "cover": "meta[property=og:image]@attr->content",
+        "summary": "meta[property=og:description]@attr->content",
+        "status": "meta[property=og:novel:status]@attr->content",
+        "update": "meta[property=og:novel:update_time]@attr->content",
+        "lastChapter": "meta[property=og:novel:latest_chapter_name]@attr->content",
+        "catalog": ""
+    },
+    "catalog": {
+        "list": "#chapterList > li",
+        "orderBy": 0,
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": "#TextContent",
+        "filter": [
+            "@center:contains(本章未完)"
+        ],
+        "page": "#readbg > p > a:nth-child(5)@attr->href@match->(.+)(?=_)(.+)",
+        "purify": [
+            "（本章未完）"
+        ]
+    },
+    "auth": {
+        "login": "https://www.youduzw.com/login.php",
+        "cookie": "www.yoduzw.com",
+        "verify": "https://masiro.me/admin/",
+        "logged": "nav > ul.bd > li:nth-child(2) > a@equal->退出"
+    },
+    "rank": [
+        {
+            "title": "排行",
+            "page": 1,
+            "size": 30,
+            "url": "https://www.youduzw.com/top/${key}_${page}.html",
+            "categories": [
+                {
+                    "value": "总点击榜",
+                    "key": "allvisit"
+                },
+                {
+                    "value": "月点击榜",
+                    "key": "monthvisit"
+                },
+                {
+                    "value": "日点击榜",
+                    "key": "dayvisit"
+                },
+                {
+                    "value": "总推荐榜",
+                    "key": "allvote"
+                },
+                {
+                    "value": "月推荐榜",
+                    "key": "monthvote"
+                },
+                {
+                    "value": "日推荐榜",
+                    "key": "dayvote"
+                },
+                {
+                    "value": "最近更新",
+                    "key": "lastupdate"
+                },
+                {
+                    "value": "最新入库",
+                    "key": "postdate"
+                },
+                {
+                    "value": "最新上架",
+                    "key": "signtime"
+                },
+                {
+                    "value": "收藏榜",
+                    "key": "goodnum"
+                },
+                {
+                    "value": "字数榜",
+                    "key": "words"
+                },
+                {
+                    "value": "新书榜",
+                    "key": "newhot"
+                }
+            ]
+        },
+        {
+            "title": "经典文学",
+            "page": 1,
+            "size": 30,
+            "url": "https://www.youduzw.com/${key}/${page}.html",
+            "categories": [
+                {
+                    "value": "传记回忆",
+                    "key": "zhuanjihuiyi"
+                },
+                {
+                    "value": "寓言童话",
+                    "key": "yuyantonghua"
+                },
+                {
+                    "value": "世界历史",
+                    "key": "shijielishi"
+                },
+                {
+                    "value": "国学古籍",
+                    "key": "guoxueguji"
+                },
+                {
+                    "value": "英文读本",
+                    "key": "yingwenduben"
+                },
+                {
+                    "value": "青春都市",
+                    "key": "qingchundushi"
+                },
+                {
+                    "value": "游戏",
+                    "key": "youxi"
+                },
+                {
+                    "value": "中国历史",
+                    "key": "zhongguolishi"
+                },
+                {
+                    "value": "战争军事",
+                    "key": "zhanzhengjunshi"
+                },
+                {
+                    "value": "杂文随笔",
+                    "key": "zawensuibi"
+                },
+                {
+                    "value": "社会心理",
+                    "key": "shehuixinli"
+                },
+                {
+                    "value": "科普学习",
+                    "key": "kepuxuexi"
+                }
+            ]
+        }
+    ]  
+}
