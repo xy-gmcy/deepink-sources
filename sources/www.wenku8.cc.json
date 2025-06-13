@@ -3,7 +3,7 @@
     "url": "www.wenku8.cc",
     "version": 100,
     "search": {
-        "url": "https://www.wenku8.cc/modules/article/search.php?searchtype=articlename&searchkey=${key}@header->cookie:PHPSESSID=qn911o0bbn63oknl5jem04i5oedo0vth",
+        "url": "https://www.wenku8.cc/modules/article/search.php?searchtype=articlename&searchkey=${key}&page=${page}@header->cookie:PHPSESSID=qn911o0bbn63oknl5jem04i5oedo0vth",
         "charset": "gbk",
         "list": "#content > table > tbody > tr > td > div",
         "name": "b",
@@ -20,7 +20,8 @@
         "category": "#content > div > table > tbody > tr:nth-child(2) > td:nth-child(1)@match->(?<=类：)(.+)",
         "words": "#content > div > table > tbody > tr:nth-child(2) > td:nth-child(5)@match->(?<=：)(.+?)(?=字)",
         "update": "#content > div > table > tbody > tr:nth-child(2) > td:nth-child(4)@match->(?<=：)(.+)",
-        "lastChapter": "td:nth-child(2) > span > a"
+        "lastChapter": "td:nth-child(2) > span > a",
+        "catalog": "#content > div:nth-child(1) > div:nth-child(6) > div > span:nth-child(1) > fieldset > div > a"
     },
     "catalog": {
         "list": "tbody > tr > td > a",
