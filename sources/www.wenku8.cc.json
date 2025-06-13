@@ -22,6 +22,21 @@
         "update": "#content > div > table > tbody > tr:nth-child(2) > td:nth-child(4)@match->(?<=：)(.+)",
         "lastChapter": "td:nth-child(2) > span > a"
     },
+    "catalog": {
+        "list": "tbody > tr > td > a",
+        "orderBy": 0,
+        "name": "a",
+        "chapter": "a"
+    },
+    "chapter": {
+        "content": "#content"
+    },
+    "auth": {
+        "login": "https://www.wenku8.cc/login.php",
+        "cookie": "www.wenku8.cc",
+        "verify": "https://www.wenku8.cc/index.php",
+        "logged": ".main > .fl > a@equal->退出登录"
+    },
     "rank": [
         {
             "title": "轻小说列表",
