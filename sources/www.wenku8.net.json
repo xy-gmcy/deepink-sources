@@ -1,19 +1,19 @@
 {
     "name": "轻小说文库",
-    "url": "www.wenku8.cc",
+    "url": "www.wenku8.net",
     "version": 100,
     "search": {
-        "url": "https://www.wenku8.cc/modules/article/search.php?searchtype=articlename&searchkey=${key}&page=${page}@header->cookie:PHPSESSID=qn911o0bbn63oknl5jem04i5oedo0vth",
+        "url": "https://www.wenku8.net/modules/article/search.php?searchtype=articlename&searchkey=${key}&page=${page}@header->cookie:PHPSESSID=m8121p9gb4r7gf60gj5aohmh6fjjp6p9",
         "charset": "gbk",
         "list": "#content > table > tbody > tr > td > div",
         "name": "b",
-        "author": "p@match->(?<=作者:)(.+?)(?=/)",
+        "author": "div:nth-child(2) > p:nth-child(2)@match->(?<=作者:)(.+)(?=/分类)",
         "cover": "img",
         "detail": "a"
     },
     "detail": {
-        "name": "td:nth-child(1) > span > b",
-        "author": "div > table > tbody > tr:nth-child(2) > td:nth-child(2)@match->(?<=：)(.+)",
+        "name": "td > table > tbody > tr > td:nth-child(1) > span > b",
+        "author": "div:nth-child(1) > table:nth-child(1) > tbody > tr:nth-child(2) > td:nth-child(2)@match->(?<=小说作者：)(.+)",
         "cover": "td > img",
         "summary": "#content > div > table:nth-child(4) > tbody > tr > td:nth-child(2)@match->(?<=内容简介：)(.+)",
         "status": "#content > div > table > tbody > tr:nth-child(2) > td:nth-child(3)",
@@ -33,9 +33,9 @@
         "content": "#content"
     },
     "auth": {
-        "login": "https://www.wenku8.cc/login.php",
-        "cookie": "www.wenku8.cc",
-        "verify": "https://www.wenku8.cc/index.php",
+        "login": "https://www.wenku8.net/login.php",
+        "cookie": "www.wenku8.net",
+        "verify": "https://www.wenku8.net/index.php",
         "logged": ".main > .fl > a@equal->退出登录"
     },
     "rank": [
@@ -43,7 +43,7 @@
             "title": "轻小说列表",
             "page": 1,
             "size": 20,
-            "url": "https://www.wenku8.cc/modules/article/articlelist.php?initial=${key}&page=${page}",
+            "url": "https://www.wenku8.net/modules/article/articlelist.php?initial=${key}&page=${page}",
             "categories": [
                 {
                     "value": "0-9",
@@ -159,7 +159,7 @@
             "title": "排行榜",
             "page": 1,
             "size": 20,
-            "url": "https://www.wenku8.cc/modules/article/toplist.php?sort=${key}&page=${page}",
+            "url": "https://www.wenku8.net/modules/article/toplist.php?sort=${key}&page=${page}",
             "categories": [
                 {
                     "value": "总排行榜",
@@ -219,7 +219,7 @@
             "title": "分类阅读",
             "page": 1,
             "size": 20,
-            "url": "https://www.wenku8.cc/modules/article/articlelist.php?class=${key}&page=${page}",
+            "url": "https://www.wenku8.net/modules/article/articlelist.php?class=${key}&page=${page}",
             "categories": [
                 {
                     "value": "电击文库",
@@ -283,7 +283,7 @@
             "title": "完结轻小说列表",
             "page": 1,
             "size": 20,
-            "url": "https://www.wenku8.cc/modules/article/articlelist.php?fullflag=1&page=${page}",
+            "url": "https://www.wenku8.net/modules/article/articlelist.php?fullflag=1&page=${page}",
             "categories": [
                 {
                     "value": "",
@@ -292,4 +292,5 @@
             ]
         }
     ]
+}
 }
