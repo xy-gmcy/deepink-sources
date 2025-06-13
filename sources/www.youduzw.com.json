@@ -4,7 +4,6 @@
     "version": 100,
     "search": {
         "url": "https://www.youduzw.com/sa/all-${key}-${page}.html",
-        "charset": "utf-8",
         "list": "li#hism",
         "name": "h3 > a",
         "author": "em > span:nth-child(4)",
