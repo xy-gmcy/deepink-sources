@@ -1,9 +1,9 @@
 {
     "name": "轻小说文库",
-    "url": "wenku8.com",
+    "url": "wenku8.cc",
     "version": 100,
     "search": {
-        "url": "https://www.wenku8.com/modules/article/search.php?searchtype=articlename&searchkey=${key}@header->cookie:PHPSESSID=qn911o0bbn63oknl5jem04i5oedo0vth",
+        "url": "https://www.wenku8.cc/modules/article/search.php?searchtype=articlename&searchkey=${key}@header->cookie:PHPSESSID=qn911o0bbn63oknl5jem04i5oedo0vth",
         "charset": "gbk",
         "list": "#content > table > tbody > tr > td > div",
         "name": "b",
@@ -27,7 +27,7 @@
             "title": "轻小说列表",
             "page": 1,
             "size": 20,
-            "url": "https://www.wenku8.com/modules/article/articlelist.php?initial=${key}&page=${page}",
+            "url": "https://www.wenku8.cc/modules/article/articlelist.php?initial=${key}&page=${page}",
             "categories": [
                 {
                     "value": "0-9",
@@ -143,7 +143,7 @@
             "title": "排行榜",
             "page": 1,
             "size": 20,
-            "url": "https://www.wenku8.com/modules/article/toplist.php?sort=${key}&page=${page}",
+            "url": "https://www.wenku8.cc/modules/article/toplist.php?sort=${key}&page=${page}",
             "categories": [
                 {
                     "value": "总排行榜",
@@ -203,7 +203,7 @@
             "title": "分类阅读",
             "page": 1,
             "size": 20,
-            "url": "https://www.wenku8.com/modules/article/articlelist.php?class=${key}&page=${page}",
+            "url": "https://www.wenku8.cc/modules/article/articlelist.php?class=${key}&page=${page}",
             "categories": [
                 {
                     "value": "电击文库",
@@ -267,7 +267,7 @@
             "title": "完结轻小说列表",
             "page": 1,
             "size": 20,
-            "url": "https://www.wenku8.com/modules/article/articlelist.php?fullflag=1&page=${page}",
+            "url": "https://www.wenku8.cc/modules/article/articlelist.php?fullflag=1&page=${page}",
             "categories": [
                 {
                     "value": "",
