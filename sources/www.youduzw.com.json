@@ -1,9 +1,9 @@
 {
     "name": "有度中文网",
-    "url": "www.yoduzw.com",
+    "url": "www.youduzw.com",
     "version": 100,
     "search": {
-        "url": "https://www.yoduzw.com/sa/all-${key}-${page}.html",
+        "url": "https://www.youduzw.com/sa/all-${key}-${page}.html",
         "list": "li#hism",
         "name": "h3 > a",
         "author": "em > span:nth-child(4)",
@@ -37,8 +37,8 @@
         ]
     },
     "auth": {
-        "login": "https://www.yoduzw.com/login.php",
-        "cookie": "www.yoduzw.com",
+        "login": "https://www.youduzw.com/login.php",
+        "cookie": "www.youduzw.com",
         "verify": "https://masiro.me/admin/",
         "logged": "nav > ul.bd > li:nth-child(2) > a@equal->退出"
     },
@@ -47,7 +47,7 @@
             "title": "排行",
             "page": 1,
             "size": 30,
-            "url": "https://www.yoduzw.com/top/${key}_${page}.html",
+            "url": "https://www.youduzw.com/top/${key}_${page}.html",
             "categories": [
                 {
                     "value": "总点击榜",
@@ -103,7 +103,7 @@
             "title": "经典文学",
             "page": 1,
             "size": 30,
-            "url": "https://www.yoduzw.com/${key}/${page}.html",
+            "url": "https://www.youduzw.com/${key}/${page}.html",
             "categories": [
                 {
                     "value": "传记回忆",
