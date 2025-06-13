@@ -3,7 +3,7 @@
     "url": "www.wenku8.net",
     "version": 100,
     "search": {
-        "url": "https://www.wenku8.net/modules/article/search.php?searchtype=articlename&searchkey=${key}&page=${page}@header->cookie:PHPSESSID=m8121p9gb4r7gf60gj5aohmh6fjjp6p9",
+        "url": "https://www.wenku8.net/modules/article/search.php?searchtype=articlename&searchkey=${key}&page=${page}",
         "charset": "gbk",
         "list": "#content > table > tbody > tr > td > div",
         "name": "b",
