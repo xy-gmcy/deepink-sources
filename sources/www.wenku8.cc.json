@@ -3,17 +3,17 @@
     "url": "www.wenku8.cc",
     "version": 100,
     "search": {
-        "url": "https://www.wenku8.cc/modules/article/search.php?searchtype=articlename&searchkey=${key}&page=${page}@header->cookie:PHPSESSID=m8121p9gb4r7gf60gj5aohmh6fjjp6p9",
+        "url": "https://www.wenku8.cc/modules/article/search.php?searchtype=articlename&searchkey=${key}&page=${page}",
         "charset": "gbk",
         "list": "#content > table > tbody > tr > td > div",
         "name": "b",
-        "author": "div:nth-child(2) > p:nth-child(2)@match->(?<=作者:)(.+)(?=/分类)",
+        "author": "p@match->(?<=作者:)(.+?)(?=/)",
         "cover": "img",
         "detail": "a"
     },
     "detail": {
-        "name": "td > table > tbody > tr > td:nth-child(1) > span > b",
-        "author": "div:nth-child(1) > table:nth-child(1) > tbody > tr:nth-child(2) > td:nth-child(2)@match->(?<=小说作者：)(.+)",
+        "name": "td:nth-child(1) > span > b",
+        "author": "div > table > tbody > tr:nth-child(2) > td:nth-child(2)@match->(?<=：)(.+)",
         "cover": "td > img",
         "summary": "#content > div > table:nth-child(4) > tbody > tr > td:nth-child(2)@match->(?<=内容简介：)(.+)",
         "status": "#content > div > table > tbody > tr:nth-child(2) > td:nth-child(3)",
