@@ -5,12 +5,12 @@
     "search": {
         "url": "https://masiro.me/admin/loadMoreNovel?page=${page}&keywoed=${key}",
         "charset": "utf-8",
-        "list": "$.novels",
-        "name": " $.title",
-        "author": "$.author",
-        "summary": "$.brief",
-        "cover": "&.cover_img",
-        "detail": "div.layui-card-body > a@attr->href"
+        "list": "div.col-md-12 > div >div.n-leg",
+        "name": " div.layui-card > a > div.layui-card-header",
+        "author": "div.author",
+        "summary": "div.tags",
+        "cover": "img@attr->data-src",
+        "detail": "div.layui-card > a@attr->href"
     },
     "detail": {
         "name": "div.novel-title",
