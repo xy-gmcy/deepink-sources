@@ -3,7 +3,7 @@
     "url": "www.youduzw.com",
     "version": 100,
     "search": {
-        "url": "https://www.youduzw.com/s@post->searchkey=${key}&&searchtype=all",
+        "url": "https://www.youduzw.com/sa/all-${key}-${page}.html",
         "charset": "utf-8",
         "list": "li#hism",
         "name": "h3 > a",
