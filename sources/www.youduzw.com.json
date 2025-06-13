@@ -39,7 +39,7 @@
     "auth": {
         "login": "https://www.youduzw.com/login.php",
         "cookie": "www.youduzw.com",
-        "verify": "https://masiro.me/admin/",
+        "verify": "https://www.youduzw.com/",
         "logged": "nav > ul.bd > li:nth-child(2) > a@equal->退出"
     },
     "rank": [
