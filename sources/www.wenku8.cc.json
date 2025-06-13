@@ -1,6 +1,6 @@
 {
     "name": "轻小说文库",
-    "url": "wenku8.cc",
+    "url": "www.wenku8.cc",
     "version": 100,
     "search": {
         "url": "https://www.wenku8.cc/modules/article/search.php?searchtype=articlename&searchkey=${key}@header->cookie:PHPSESSID=qn911o0bbn63oknl5jem04i5oedo0vth",
