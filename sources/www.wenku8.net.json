@@ -283,7 +283,7 @@
             "title": "完结轻小说列表",
             "page": 1,
             "size": 20,
-            "url": "https://www.wenku8.net/modules/article/articlelist.php?fullflag=1",
+            "url": "https://www.wenku8.net/modules/article/articlelist.php?fullflag=1&page=${page}",
             "categories": [
                 {
                     "value": "",
