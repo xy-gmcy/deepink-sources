@@ -5,7 +5,7 @@
     "search": {
         "url": "https://masiro.me/admin/loadMoreNovel?page=${page}&keywoed=${key}",
         "charset": "utf-8",
-        "list": "div.col-md-12 > div >div.n-leg > div.layui-card:nth-child(3n+1)",
+        "list": "div.col-md-12 > div >div.n-leg > div.layui-card",
         "name": "  a > div.layui-card-header",
         "author": "div.layui-card-body > div.n-info > div.author",
         "summary": "",
