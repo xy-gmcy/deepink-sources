@@ -1,14 +1,14 @@
 {
     "name": "有度中文网",
-    "url": "cdn.a.zw.yodu.app",
+    "url": "www.youduzw.com",
     "version": 100,
     "search": {
-        "url": "https://cdn.a.zw.yodu.app/sa/all-${key}-${page}.html",
-        "list": "li.g_col_6",
-        "name": "div > a > h2",
-        "author": "div > p > strong > span",
-        "cover": "div > a > i > img@attr->_src",
-        "detail": "div > a@attr->href"
+        "url": "https://www.youduzw.com/sa/all-${key}-${page}.html",
+        "list": "li#hism",
+        "name": "h3 > a",
+        "author": "em > span:nth-child(4)",
+        "cover": "a > img@attr->_src",
+        "detail": "h3 > a@attr->href"
     },
     "detail": {
         "name": "meta[property=og:novel:book_name]@attr->content",
@@ -37,9 +37,9 @@
         ]
     },
     "auth": {
-        "login": "https://cdn.a.zw.yodu.app/login.php",
-        "cookie": "cdn.a.zw.yodu.app",
-        "verify": "https://cdn.a.zw.yodu.app/",
+        "login": "https://www.youduzw.com/login.php",
+        "cookie": "www.youduzw.com",
+        "verify": "https://www.youduzw.com/",
         "logged": "nav > ul.bd > li:nth-child(2) > a@equal->退出"
     },
     "rank": [
@@ -47,7 +47,7 @@
             "title": "排行",
             "page": 1,
             "size": 30,
-            "url": "https://cdn.a.zw.yodu.app/top/${key}_${page}.html",
+            "url": "https://www.youduzw.com/top/${key}_${page}.html",
             "categories": [
                 {
                     "value": "总点击榜",
@@ -103,7 +103,7 @@
             "title": "经典文学",
             "page": 1,
             "size": 30,
-            "url": "https://cdn.a.zw.yodu.app/${key}/${page}.html",
+            "url": "https://www.youduzw.com/${key}/${page}.html",
             "categories": [
                 {
                     "value": "传记回忆",
