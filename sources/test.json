@@ -3,7 +3,8 @@
     "url": "masiro.me",
     "version": 100,
     "search": {
-        "url": "https://masiro.me/admin/loadMoreNovel?page=${page}&keywoed=${key}@header->X-Requested-With: XMLHttpRequest",
+        "url": "https://masiro.me/admin/loadMoreNovel?page=${page}&keywoed=${key}",
+        "contentType": "webview",
         "charset": "utf-8",
         "list": "div.col-md-12 > div >div.n-leg > div.layui-card",
         "name": "  a > div.layui-card-header",
