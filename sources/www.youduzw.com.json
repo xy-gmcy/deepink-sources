@@ -4,6 +4,7 @@
     "version": 100,
     "search": {
         "url": "https://www.youduzw.com/sa/all-${key}-${page}.html",
+        "charset": "utf-8",
         "list": "li.g_col_6",
         "name": "div > a > h2",
         "author": "div > p > strong > span",
@@ -43,6 +44,18 @@
         "logged": "nav > ul.bd > li:nth-child(2) > a@equal->退出"
     },
     "rank": [
+        {
+            "title": "书库",
+            "page": 1,
+            "size": 30,
+            "url": "https://www.youduzw.com/0/${page}.html",
+            "categories": [
+                {
+                    "value": "全部分类",
+                    "key": ""
+                }
+            ]
+        },
         {
             "title": "排行",
             "page": 1,
@@ -110,48 +123,496 @@
                     "key": "zhuanjihuiyi"
                 },
                 {
-                    "value": "寓言童话",
-                    "key": "yuyantonghua"
-                },
-                {
-                    "value": "世界历史",
-                    "key": "shijielishi"
-                },
-                {
-                    "value": "国学古籍",
-                    "key": "guoxueguji"
-                },
-                {
                     "value": "英文读本",
                     "key": "yingwenduben"
-                },
-                {
-                    "value": "青春都市",
-                    "key": "qingchundushi"
-                },
-                {
-                    "value": "游戏",
-                    "key": "youxi"
-                },
-                {
-                    "value": "中国历史",
-                    "key": "zhongguolishi"
-                },
-                {
-                    "value": "战争军事",
-                    "key": "zhanzhengjunshi"
                 },
                 {
                     "value": "杂文随笔",
                     "key": "zawensuibi"
                 },
                 {
+                    "value": "经典言情",
+                    "key": "jingdianyanqing"
+                },
+                {
+                    "value": "经典历史",
+                    "key": "jingdianlishi"
+                },
+                {
+                    "value": "侦探推理",
+                    "key": "zhentantuili"
+                },
+                {
+                    "value": "惊悚悬疑",
+                    "key": "jingsongxuanyi"
+                },
+                {
+                    "value": "网络玄幻",
+                    "key": "wangluoxuanhuan"
+                },
+                {
+                    "value": "寓言童话",
+                    "key": "yuyantonghua"
+                },
+                {
+                    "value": "青春都市",
+                    "key": "qingchundushi"
+                },
+                {
                     "value": "社会心理",
                     "key": "shehuixinli"
                 },
                 {
+                    "value": "外国小说",
+                    "key": "waiguoxiaoshuo"
+                },
+                {
+                    "value": "经典科幻",
+                    "key": "jingdiankehuan"
+                },
+                {
+                    "value": "当代小说",
+                    "key": "dangdaixiaoshuo"
+                },
+                {
+                    "value": "经典武侠",
+                    "key": "jingdianwuxia"
+                },
+                {
+                    "value": "纪实报告",
+                    "key": "jishibaogao"
+                },
+                {
+                    "value": "世界历史",
+                    "key": "shijielishi"
+                },
+                {
+                    "value": "中国历史",
+                    "key": "zhongguolishi"
+                },
+                {
                     "value": "科普学习",
                     "key": "kepuxuexi"
+                },
+                {
+                    "value": "诗歌戏曲",
+                    "key": "shigexiqu"
+                },
+                {
+                    "value": "宗教哲学",
+                    "key": "zongjiaozhexue"
+                },
+                {
+                    "value": "文学理论",
+                    "key": "wenxuelilun"
+                },
+                {
+                    "value": "日语读物",
+                    "key": "riyuduwu"
+                },
+                {
+                    "value": "作品集",
+                    "key": "zuopinji"
+                },
+                {
+                    "value": "国学古籍",
+                    "key": "guoxueguji"
+                },
+                {
+                    "value": "战争军事",
+                    "key": "zhanzhengjunshi"
+                },
+                {
+                    "value": "政治经济",
+                    "key": "zhengzhijingji"
+                },
+                {
+                    "value": "古典文学",
+                    "key": "gudianwenxue"
+                },
+                {
+                    "value": "现代小说",
+                    "key": "xiandaixiaoshuo"
+                },
+                {
+                    "value": "官场小说",
+                    "key": "guanchangxiaoshuo"
+                },
+                {
+                    "value": "轻小说",
+                    "key": "qingxiaoshuo"
+                }
+            ]
+        },
+        {
+            "title": "繁体图书",
+            "page": 1,
+            "size": 30,
+            "url": "https://www.youduzw.com/${key}/${page}.html",
+            "categories": [
+                {
+                    "value": "世紀百強",
+                    "key": "shijibaiqiang"
+                },
+                {
+                    "value": "隨身智囊",
+                    "key": "suishenzhinang"
+                },
+                {
+                    "value": "歷史煙雲",
+                    "key": "lishiyanyun"
+                },
+                {
+                    "value": "武俠小說",
+                    "key": "wuxia"
+                },
+                {
+                    "value": "懸疑小說",
+                    "key": "xuanyi"
+                },
+                {
+                    "value": "言情小說",
+                    "key": "yanqing"
+                },
+                {
+                    "value": "奇幻小說",
+                    "key": "qihuanxiaoshuo"
+                }
+            ]
+        },
+        {
+            "title": "网络小说",
+            "page": 1,
+            "size": 30,
+            "url": "https://www.youduzw.com/${key}/${page}.html",
+            "categories": [
+                {
+                    "value": "网游小说",
+                    "key": "wangyouxiaoshuo"
+                },
+                {
+                    "value": "玄幻小说",
+                    "key": "xuanhuanxiaoshuo"
+                },
+                {
+                    "value": "穿越小说",
+                    "key": "chuanyuexiaoshuo"
+                },
+                {
+                    "value": "科幻小说",
+                    "key": "kehuanxiaoshuo"
+                },
+                {
+                    "value": "仙侠小说",
+                    "key": "xianxiaxiaoshuo"
+                },
+                {
+                    "value": "都市小说",
+                    "key": "dushixiaoshuo"
+                },
+                {
+                    "value": "武侠小说",
+                    "key": "wuxiaxiaoshuo"
+                },
+                {
+                    "value": "历史小说",
+                    "key": "lishixiaoshuo"
+                },
+                {
+                    "value": "竞技小说",
+                    "key": "jingjixiaoshuo"
+                },
+                {
+                    "value": "言情小说",
+                    "key": "yanqingxiaoshuo"
+                },
+                {
+                    "value": "悬疑小说",
+                    "key": "xuanyixiaoshuo"
+                },
+                {
+                    "value": "军事小说",
+                    "key": "junshixiaoshuo"
+                },
+                {
+                    "value": "灵异小说",
+                    "key": "lingyixiaoshuo"
+                }
+            ]
+        },
+        {
+            "title": "轻の小说",
+            "page": 1,
+            "size": 30,
+            "url": "https://www.youduzw.com/${key}/${page}.html",
+            "categories": [
+                {
+                    "value": "电击文库",
+                    "key": "dianjiwenku"
+                },
+                {
+                    "value": "富士见文库",
+                    "key": "fushijianwenku"
+                },
+                {
+                    "value": "角川文库",
+                    "key": "jiaochuanwenku"
+                },
+                {
+                    "value": "MF文库J",
+                    "key": "MFwenkuJ"
+                },
+                {
+                    "value": "Fami通文库",
+                    "key": "Famitongwenku"
+                },
+                {
+                    "value": "GA文库",
+                    "key": "GAwenku"
+                },
+                {
+                    "value": "HJ文库",
+                    "key": "HJwenku"
+                },
+                {
+                    "value": "一迅社",
+                    "key": "yixunshe"
+                },
+                {
+                    "value": "集英社",
+                    "key": "jiyingshe"
+                },
+                {
+                    "value": "小学馆",
+                    "key": "xiaoxueguan"
+                },
+                {
+                    "value": "讲谈社",
+                    "key": "jiangtanshe"
+                },
+                {
+                    "value": "少女文库",
+                    "key": "shaonvwenku"
+                },
+                {
+                    "value": "其他文库",
+                    "key": "qitawenku"
+                }
+            ]
+        },
+        {
+            "title": "全本小说",
+            "page": 1,
+            "size": 30,
+            "url": "https://www.youduzw.com/quanben/${key}/${page}.html",
+            "categories": [
+                {
+                    "value": "全部分类",
+                    "key": ""
+                },
+                {
+                    "value": "世紀百強",
+                    "key": "shijibaiqiang"
+                },
+                {
+                    "value": "隨身智囊",
+                    "key": "suishenzhinang"
+                },
+                {
+                    "value": "歷史煙雲",
+                    "key": "lishiyanyun"
+                },
+                {
+                    "value": "武俠小說",
+                    "key": "wuxia"
+                },
+                {
+                    "value": "懸疑小說",
+                    "key": "xuanyi"
+                },
+                {
+                    "value": "言情小說",
+                    "key": "yanqing"
+                },
+                {
+                    "value": "奇幻小說",
+                    "key": "qihuanxiaoshuo"
+                },
+                {
+                    "value": "传记回忆",
+                    "key": "zhuanjihuiyi"
+                },
+                {
+                    "value": "英文读本",
+                    "key": "yingwenduben"
+                },
+                {
+                    "value": "杂文随笔",
+                    "key": "zawensuibi"
+                },
+                {
+                    "value": "经典言情",
+                    "key": "jingdianyanqing"
+                },
+                {
+                    "value": "经典历史",
+                    "key": "jingdianlishi"
+                },
+                {
+                    "value": "侦探推理",
+                    "key": "zhentantuili"
+                },
+                {
+                    "value": "惊悚悬疑",
+                    "key": "jingsongxuanyi"
+                },
+                {
+                    "value": "网络玄幻",
+                    "key": "wangluoxuanhuan"
+                },
+                {
+                    "value": "寓言童话",
+                    "key": "yuyantonghua"
+                },
+                {
+                    "value": "青春都市",
+                    "key": "qingchundushi"
+                },
+                {
+                    "value": "社会心理",
+                    "key": "shehuixinli"
+                },
+                {
+                    "value": "外国小说",
+                    "key": "waiguoxiaoshuo"
+                },
+                {
+                    "value": "经典科幻",
+                    "key": "jingdiankehuan"
+                },
+                {
+                    "value": "当代小说",
+                    "key": "dangdaixiaoshuo"
+                },
+                {
+                    "value": "经典武侠",
+                    "key": "jingdianwuxia"
+                },
+                {
+                    "value": "纪实报告",
+                    "key": "jishibaogao"
+                },
+                {
+                    "value": "世界历史",
+                    "key": "shijielishi"
+                },
+                {
+                    "value": "中国历史",
+                    "key": "zhongguolishi"
+                },
+                {
+                    "value": "科普学习",
+                    "key": "kepuxuexi"
+                },
+                {
+                    "value": "诗歌戏曲",
+                    "key": "shigexiqu"
+                },
+                {
+                    "value": "宗教哲学",
+                    "key": "zongjiaozhexue"
+                },
+                {
+                    "value": "文学理论",
+                    "key": "wenxuelilun"
+                },
+                {
+                    "value": "日语读物",
+                    "key": "riyuduwu"
+                },
+                {
+                    "value": "作品集",
+                    "key": "zuopinji"
+                },
+                {
+                    "value": "国学古籍",
+                    "key": "guoxueguji"
+                },
+                {
+                    "value": "战争军事",
+                    "key": "zhanzhengjunshi"
+                },
+                {
+                    "value": "政治经济",
+                    "key": "zhengzhijingji"
+                },
+                {
+                    "value": "古典文学",
+                    "key": "gudianwenxue"
+                },
+                {
+                    "value": "现代小说",
+                    "key": "xiandaixiaoshuo"
+                },
+                {
+                    "value": "官场小说",
+                    "key": "guanchangxiaoshuo"
+                },
+                {
+                    "value": "轻小说",
+                    "key": "qingxiaoshuo"
+                },
+                {
+                    "value": "电击文库",
+                    "key": "dianjiwenku"
+                },
+                {
+                    "value": "富士见文库",
+                    "key": "fushijianwenku"
+                },
+                {
+                    "value": "角川文库",
+                    "key": "jiaochuanwenku"
+                },
+                {
+                    "value": "MF文库J",
+                    "key": "MFwenkuJ"
+                },
+                {
+                    "value": "Fami通文库",
+                    "key": "Famitongwenku"
+                },
+                {
+                    "value": "GA文库",
+                    "key": "GAwenku"
+                },
+                {
+                    "value": "HJ文库",
+                    "key": "HJwenku"
+                },
+                {
+                    "value": "一迅社",
+                    "key": "yixunshe"
+                },
+                {
+                    "value": "集英社",
+                    "key": "jiyingshe"
+                },
+                {
+                    "value": "小学馆",
+                    "key": "xiaoxueguan"
+                },
+                {
+                    "value": "讲谈社",
+                    "key": "jiangtanshe"
+                },
+                {
+                    "value": "少女文库",
+                    "key": "shaonvwenku"
+                },
+                {
+                    "value": "其他文库",
+                    "key": "qitawenku"
                 }
             ]
         }
