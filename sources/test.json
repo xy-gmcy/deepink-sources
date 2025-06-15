@@ -3,14 +3,14 @@
     "url": "masiro.me",
     "version": 100,
     "search": {
-        "url": "https://masiro.me/admin/loadMoreNovels?page=${page}&keyword=${key}",
+        "url": "https://masiro.me/admin/@header->type=json&@header->time:${java.lang.System.currentTimeMillis()}&@header->cookie:remember_admin_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6Ik9WTzFrRXBcL1FlMGNJcUlJOG1BV2dBPT0iLCJ2YWx1ZSI6ImRSXC9mS0M3dlNKYVpFVWIrV3dlRDhTd2I3MFZMTEQydmwwYU54QkJVZjdkMnZEZFhiOXBcL09ReUVDczBPbUZVekhYaXRLbnhLa2Nwc2Z0WFJlMmJXbm00aHMwVkxVRzZ0TDFJZEVBSG5JWjBSUUxWXC9OdmZscndcL2ZvMDBOXC9UXC90OGlJOEZ1SDl5K0JpV0hyUVd4M1wvS0xjd2tRcEZBQWxMVGs1Vm5wQlM2VWlxZ0lCZWkzcTVWSkNDZVF4aUg3NWciLCJtYWMiOiI0MWNhNzllZDA1NzI3MDYwZmM2YWViNmVmODlhOWE5N2ExZDFhZTYzODkyOGVlMzRhOGNkZDYwOWViMzkzY2YxIn0%3D; last_check_signin=1749988823706; last_check_announcement=1749988824211; cf_clearance=_7gP0E3_5KllqWFMtkjkXy0Zz1t0w7B7pQC7nLqVfFQ-1749991383-1.2.1.1-oc6uvoDQZjeENJCaU5Bgg1b.Mkr4Q.nli9__yDpktmYI.fYQmTeL89BDjjxz5IwXLMFzhktMGrTZsACj5RUb9S1zP6Wkbbfqy9lD5XD18yPn8.60p_3RZVhQNycDMYJmzVGpIz80Di9AZom.xxw74SxttYmUyfJqL5lgIS0jz3r1wlDw83S7Vm0tHR6xtu2MhQiinlYNqeRRWiSC488xMhxn9XTRMyu5arNSgt61SoQAq1CUZTnXkiYKAQkwudIGXmuwmGz2.f0soSsfDyUJQyh_Z5zKjjPalW9gAF.4aySwFIN4un_rdzgIG6.HbhgkjfWH7cA7sRH27veqNLZ9XjD5k9kqOzS4sXo0pWojtlo; XSRF-TOKEN=eyJpdiI6ImdTYkNFeDZsUEU0d2xRS0oyXC9LdGxnPT0iLCJ2YWx1ZSI6InJpaEhLM3BpOXpZUklySmNTQ1NneHB0Y0FjVW9QVFdadlpFQXBkNElDa3hERUlTTE1GZUZ2RHV1U2ZRcnpSQjRWVG1jN1wvcHE2ZThEWXA4WW5wclVhZz09IiwibWFjIjoiOTI2NDEzYjhkZmQyMWJmNTRhMGFkZjQ1MDE1NmVjMmE0NDIyYjI2YWNhNWE0MTllZGI0ZGUzNjZiN2EzOWRjZCJ9; laravel_session=eyJpdiI6IlJ0Z1RMNTRNRk0wRjgwSFRlRTU2d0E9PSIsInZhbHVlIjoibFdUcTJieTE0NFdha0RMSVBrdWhhOFBCQng0YSszeUxuVTlLUlVlXC9HdWdqbktHemdBSEljMk1xSFdkajZtUU1XZjZROHdMVVQ5bzhkMnBRaFwvcUhEdz09IiwibWFjIjoiYjNjNmZkNzkwNjAyOGEwMmY1ZWJjMDY2ZjI1NDQyMzAwZTg4Y2M4NjBkYTBiZWNjMWUwNTNhYzBhMzZlMWE0NyJ9",
         "charset": "utf-8",
-        "list": "$.novels",
-        "name": "$.title",
-        "author": "$.author",
-        "summary": "$.brief",
-        "cover": "$.cover_img",
-        "detail": "https://masiro.me/admin/novelView?novel_id=${$,id}"
+        "list": "div.col-md-12 > div >div.n-leg > div.layui-card",
+        "name": "a > div.layui-card-header",
+        "author": "div.layui-card-body > div.n-info > div.author",
+        "summary": "",
+        "cover": "div.layui-card-body > a > img@attr->data-src",
+        "detail": "div.layui-card-body > a@attr->href"
     },
     "detail": {
         "name": "div.novel-title",
@@ -24,16 +24,16 @@
         "catalog": ""
     },
     "catalog": {
-        "list": "ul.episode-ul>a",
+        "list": "div.chapter-content > ul.chapter-ul > li:nth-child(2n)",
         "booklet": {
-            "list": "div.chapter-content > ul.chapter-ul > li.chapter-box > span",
-            "name": "div.chapter-content > ul.chapter-ul > li.chapter-box > b"
+            "list": "div.chapter-content > ul.chapter-ul > li:nth-child(2n) > span > a@attr->href",
+            "name": "div.chapter-content > ul.chapter-ul > li:nth-child(2n) > span > a"
         },
-        "name": "li",
+        "name": "ul >a > li > span",
         "chapter": "a@attr->href"
     },
     "chapter": {
-        "content": "div.row > div.col-md-12 > div.read-box > div.nvl-content"
+        "content": "div.col-md-12 > div > div > p"
     },
     "auth": {
         "login": "https://masiro.me/admin/auth/login",
@@ -46,7 +46,7 @@
             "title": "小说",
             "page": 1,
             "size": 30,
-            "url": "https://masiro.me/admin/loadMoreNovels?page=${page}&status=1&order=2&ori=${key}",
+            "url": "https://masiro.me/admin/novels?ori=${key}",
             "categories": [
                 {
                     "value": "全部",
@@ -58,21 +58,15 @@
                 },
                 {
                     "value": "原创",
-                    "key": "1"
+                    "key": "0"
                 }
             ]
-        },
-        {
-            "title": "最近更新",
-            "page": 1,
-            "size": 30,
-            "url": "https://masiro.me/admin/loadMoreNovels?page=${page}&order=1"
         },
         {
             "title": "收藏",
             "page": 1,
             "size": 30,
-            "url": "https://masiro.me/admin/loadMoreNovels?page=${page}&collection=1"
+            "url": "https://masiro.me/admin/novels?collection=1"
         }
     ]
 }
