@@ -11,7 +11,7 @@
         "author": "div > div.card-body > div.card-author > a",
         "summary": "",
         "cover": "div > div > a > div > div > div@attr->data-src",
-        "detail": "div.mr-3 > a@attr->href, div > div > div > h5 > a@attr->href"
+        "detail": "a@attr->href"
     },
     "detail": {
         "name": "div.col-md-9.book-detail > h2",
