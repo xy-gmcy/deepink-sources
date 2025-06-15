@@ -3,14 +3,14 @@
     "url": "masiro.me",
     "version": 100,
     "search": {
-        "url": "https://masiro.me/admin/loadMoreNovels?page=1&collection=1",
+        "url": "https://masiro.me/admin/loadMoreNovels?page=${page}&keyword=${key}",
         "charset": "utf-8",
         "list": "$.novels",
         "name": "$.title",
         "author": "$.author",
         "summary": "$.brief",
         "cover": "$.cover_img",
-        "detail": "div.layui-card-body > a@attr->href"
+        "detail": "https://masiro.me/admin/novelView?novel_id=${$,id}"
     },
     "detail": {
         "name": "div.novel-title",
@@ -24,16 +24,16 @@
         "catalog": ""
     },
     "catalog": {
-        "list": "div.chapter-content > ul.chapter-ul > li:nth-child(2n)",
+        "list": "ul.episode-ul>a",
         "booklet": {
-            "list": "div.chapter-content > ul.chapter-ul > li:nth-child(2n) > span > a@attr->href",
-            "name": "div.chapter-content > ul.chapter-ul > li:nth-child(2n) > span > a"
+            "list": "div.chapter-content > ul.chapter-ul > li.chapter-box > span",
+            "name": "div.chapter-content > ul.chapter-ul > li.chapter-box > b"
         },
-        "name": "ul >a > li > span",
+        "name": "li",
         "chapter": "a@attr->href"
     },
     "chapter": {
-        "content": "div.col-md-12 > div > div > p"
+        "content": "div.row > div.col-md-12 > div.read-box > div.nvl-content"
     },
     "auth": {
         "login": "https://masiro.me/admin/auth/login",
@@ -46,7 +46,7 @@
             "title": "小说",
             "page": 1,
             "size": 30,
-            "url": "https://masiro.me/admin/novels?ori=${key}",
+            "url": "https://masiro.me/admin/loadMoreNovels?page=${page}&status=1&order=2&ori=${key}",
             "categories": [
                 {
                     "value": "全部",
@@ -58,15 +58,21 @@
                 },
                 {
                     "value": "原创",
-                    "key": "0"
+                    "key": "1"
                 }
             ]
+        },
+        {
+            "title": "最近更新",
+            "page": 1,
+            "size": 30,
+            "url": "https://masiro.me/admin/loadMoreNovels?page=${page}&order=1"
         },
         {
             "title": "收藏",
             "page": 1,
             "size": 30,
-            "url": "https://masiro.me/admin/novels?collection=1"
+            "url": "https://masiro.me/admin/loadMoreNovels?page=${page}&collection=1"
         }
     ]
 }
