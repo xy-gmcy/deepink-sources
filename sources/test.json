@@ -6,12 +6,12 @@
         "url": "https://www.esjzone.one/tags/${key}/",
         "webView": "true",
         "charset": "utf-8",
-        "list": "div.col-xl-9 > div.row>div able.tabel > tbody > tr",
+        "list": " table.tabel > tbody > tr, div.col-xl-9 > div.row>div",
         "name": " div > div > h5 > a",
         "author": "div>div.card-body > div.card-author > a",
         "summary": "",
         "cover": "div>div>a>div>div>div@attr->data-src",
-        "detail": "div> div > div > h5 > a@attr->href div.mr-3 > a@attr->href"
+        "detail": "div.mr-3 > a@attr->href, div> div > div > h5 > a@attr->href"
     },
     "detail": {
         "name": "div.col-md-9.book-detail > h2",
