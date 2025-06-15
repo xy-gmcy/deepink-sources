@@ -4,7 +4,10 @@
     "version": 100,
     "search": {
         "url": "https://www.esjzone.one/tags/${key}/${page}@header->type:json@header->time:12736739",
-        "webView": "true",
+        "webView": {
+          "enable": true,
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
+        }
         "charset": "utf-8",
         "list": "table.table > tbody > tr, div.col-xl-9 > div.row > div.col-lg-3",
         "name": " div > div > h5 > a",
