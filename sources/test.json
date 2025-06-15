@@ -3,50 +3,6 @@
     "url": "masiro.me",
     "version": 100,
     "search": {
-        "url": "https://masiro.me/admin/loadMoreNovel?page=${page}&keywoed=${key}",
-        "contentType": "webview",
-        "charset": "utf-8",
-        "list": "div.col-md-12 > div >div.n-leg > div.layui-card",
-        "name": "  a > div.layui-card-header",
-        "author": "div.layui-card-body > div.n-info > div.author",
-        "summary": "",
-        "cover": "div.layui-card-body > a > img@attr->data-src",
-        "detail": "div.layui-card-body > a@attr->href"
-    },
-    "detail": {
-        "name": "div.novel-title",
-        "author": "div.n-detail > div.author > a",
-        "cover": "div.with-border > span > div > a > img@attr->src",
-        "summary": "div.brief",
-        "status": "div.n-detail > div.n-status",
-        "update": "div.n-detail > div.n-update > span.s-font",
-        "words": "div.n-detail > div.n-chapters",
-        "lastChapter": "div.n-detail > div.n-update > a.n-wa",
-        "catalog": ""
-    },
-    "catalog": {
-        "list": "div.chapter-content > ul.chapter-ul > li:nth-child(2n)",
-        "name": "ul >a > li > span",
-        "chapter": "a@attr->href"
-    },
-    "chapter": {
-        "content": "div.col-col-md-12 > div > div > div > div > p"
-    },
-    "auth": {
-        "login": "https://masiro.me/admin/auth/login",
-        "cookie": "masiro.me",
-        "verify": "https://masiro.me/admin/",
-        "logged": "div.pull-right > a@equal->登出"
-    },
-    "rank": [
-        {
-            "title": "小说",
-            "page": 1,
-{
-    "name": "真白萌",
-    "url": "masiro.me",
-    "version": 100,
-    "search": {
         "url": "https://masiro.me/admin/loadMoreNovels?page=1&collection=1",
         "charset": "utf-8",
         "list": "$.novels",
