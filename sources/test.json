@@ -201,7 +201,7 @@
             "title": "个人中心",
             "page": 1,
             "size": 20,
-            "url": "https://www.esjzone.one/my/${key}/${page}.html",
+            "url": "https://www.esjzone.one/my/favorite/${page}.html",
             "categories": [
                 {
                     "value": "我的收藏",
