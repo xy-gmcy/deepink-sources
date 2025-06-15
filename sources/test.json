@@ -3,7 +3,8 @@
     "url": "www.esjzone.one",
     "version": 100,
     "search": {
-        "url": "https://www.esjzone.one/tags/${key}/",
+        "url": "https://www.esjzone.one/tags/${key}/${page}@header->type:html",
+        "webView": "true",
         "charset": "utf-8",
         "list": "table.table > tbody > tr, div.col-xl-9 > div.row > div.col-lg-3",
         "name": " div > div > h5 > a",
