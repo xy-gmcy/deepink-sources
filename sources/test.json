@@ -5,11 +5,11 @@
     "search": {
         "url": "https://www.youduzw.com/sa/all-${key}-${page}.html",
         "charset": "utf-8",
-        "list": "li.g_col_6, li#hism",
-        "name": "div > a > h2, h3 > a",
-        "author": "div > p > strong > span, em > span:nth-child(4)",
-        "cover": "div > a > i > img@attr->_src, a.g_thumb > img@attr->_src",
-        "detail": "div > a@attr->href, h3 > a@attr->href"
+        "list": "li#hism",
+        "name": "h3 > a",
+        "author": "em > span:nth-child(4)",
+        "cover": "a.g_thumb > img@attr->_src",
+        "detail": "h3 > a@attr->href"
     },
     "detail": {
         "name": "meta[property=og:novel:book_name]@attr->content",
