@@ -4,6 +4,7 @@
     "version": 100,
     "search": {
         "url": "https://www.esjzone.one/tags/${key}/",
+        "webView": "true",
         "charset": "utf-8",
         "list": "table.tabel > tbody > tr",
         "name": " div > div > h5 > a",
