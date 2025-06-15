@@ -6,7 +6,7 @@
         "url": "https://www.esjzone.one/tags/${key}/${page}",
         "engine": "webview",
         "charset": "utf-8",
-        "list": "table.table > tbody > tr, div.col-xl-9 > div.row > div.col-lg-3",
+        "list": "table.table > tbody > tr",
         "name": " div > div > h5 > a",
         "author": "div > div.card-body > div.card-author > a",
         "summary": "",
