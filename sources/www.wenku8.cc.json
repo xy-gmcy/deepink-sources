@@ -1,19 +1,19 @@
 {
-    "name": "轻小说文库",
+    "name": "轻小说文库-作者名称",
     "url": "www.wenku8.cc",
     "version": 100,
     "search": {
-        "url": "https://www.wenku8.cc/modules/article/search.php?searchtype=articlename&searchkey=${key}&page=${page}@header->cookie:PHPSESSID=qn911o0bbn63oknl5jem04i5oedo0vth",
+        "url": "https://www.wenku8.cc/modules/article/search.php?@post->searchtype=author&searchkey=${key}&page=${page}",
         "charset": "gbk",
-        "list": "#content > table > tbody > tr > td > div",
-        "name": "b",
-        "author": "p@match->(?<=作者:)(.+?)(?=/)",
-        "cover": "img",
-        "detail": "a"
+        "list": "div#content > table.grid > tbody > tr > td > div, div#content > form#checkform > table.grid > tbody > tr:not(:first-child):not(:last-child)",
+        "name": "b, td:nth-child(2) > a",
+        "author": "div:nth-child(2) > p:nth-child(2)@match->(?<=作者:)(.+)(?=/分类), td:nth-child(3) > a",
+        "cover": "div > a > img@attr->src",
+        "detail": "div > b > a, td:nth-child(2) > a@attr->href"
     },
     "detail": {
-        "name": "td:nth-child(1) > span > b",
-        "author": "div > table > tbody > tr:nth-child(2) > td:nth-child(2)@match->(?<=：)(.+)",
+        "name": "td > table > tbody > tr > td:nth-child(1) > span > b",
+        "author": "div:nth-child(1) > table:nth-child(1) > tbody > tr:nth-child(2) > td:nth-child(2)@match->(?<=小说作者：)(.+)",
         "cover": "td > img",
         "summary": "#content > div > table:nth-child(4) > tbody > tr > td:nth-child(2)@match->(?<=内容简介：)(.+)",
         "status": "#content > div > table > tbody > tr:nth-child(2) > td:nth-child(3)",
@@ -24,8 +24,12 @@
         "catalog": "#content > div:nth-child(1) > div:nth-child(6) > div > span:nth-child(1) > fieldset > div > a"
     },
     "catalog": {
-        "list": "tbody > tr > td > a",
+        "list": "tbody > tr",
         "orderBy": 0,
+        "booklet": {
+            "name": "td.vcss",
+            "list": "td.ccss"
+        },
         "name": "a",
         "chapter": "a"
     },
@@ -404,6 +408,274 @@
                 {
                     "value": "Z",
                     "key": "Z"
+                }
+            ]
+        },
+        {
+            "title": "日常系属性Tags",
+            "page": 1,
+            "size": 20,
+            "url": "https://www.wenku8.cc/modules/article/tags.php?t=${key}",
+            "categories": [
+                {
+                    "value": "校园",
+                    "key": "%D0%A3%D4%B0"
+                },
+                {
+                    "value": "青春",
+                    "key": "%C7%E0%B4%BA"
+                },
+                {
+                    "value": "恋爱",
+                    "key": "%C1%B5%B0%AE"
+                },
+                {
+                    "value": "治愈",
+                    "key": "%D6%CE%D3%FA"
+                },
+                {
+                    "value": "群像",
+                    "key": "%C8%BA%CF%F1"
+                },
+                {
+                    "value": "竞技",
+                    "key": "%BE%BA%BC%BC"
+                },
+                {
+                    "value": "音乐",
+                    "key": "%D2%F4%C0%D6"
+                },
+                {
+                    "value": "美食",
+                    "key": "%C3%C0%CA%B3"
+                },
+                {
+                    "value": "旅行",
+                    "key": "%C2%C3%D0%D0"
+                },
+                {
+                    "value": "欢乐向",
+                    "key": "%BB%B6%C0%D6%CF%F2"
+                },
+                {
+                    "value": "经营",
+                    "key": "%BE%AD%D3%AA"
+                },
+                {
+                    "value": "职场",
+                    "key": "%D6%B0%B3%A1"
+                },
+                {
+                    "value": "斗智",
+                    "key": "%B6%B7%D6%C7"
+                },
+                {
+                    "value": "脑洞",
+                    "key": "%C4%D4%B6%B4"
+                },
+                {
+                    "value": "宅文化",
+                    "key": "%D5%AC%CE%C4%BB%AF"
+                }
+            ]
+        },
+        {
+            "title": "幻想系属性Tags",
+            "page": 1,
+            "size": 20,
+            "url": "https://www.wenku8.cc/modules/article/tags.php?t=${key}",
+            "categories": [
+                {
+                    "value": "穿越",
+                    "key": "%B4%A9%D4%BD"
+                },
+                {
+                    "value": "奇幻",
+                    "key": "%C6%E6%BB%C3"
+                },
+                {
+                    "value": "魔法",
+                    "key": "%C4%A7%B7%A8"
+                },
+                {
+                    "value": "异能",
+                    "key": "%D2%EC%C4%DC"
+                },
+                {
+                    "value": "战斗",
+                    "key": "%D5%BD%B6%B7"
+                },
+                {
+                    "value": "科幻",
+                    "key": "%BF%C6%BB%C3"
+                },
+                {
+                    "value": "机战",
+                    "key": "%BB%FA%D5%BD"
+                },
+                {
+                    "value": "战争",
+                    "key": "%D5%BD%D5%F9"
+                },
+                {
+                    "value": "冒险",
+                    "key": "%C3%B0%CF%D5"
+                },
+                {
+                    "value": "龙傲天",
+                    "key": "%C1%FA%B0%C1%CC%EC"
+                }
+            ]
+        },
+        {
+            "title": "黑深残属性Tags",
+            "page": 1,
+            "size": 20,
+            "url": "https://www.wenku8.cc/modules/article/tags.php?t=${key}",
+            "categories": [
+                {
+                    "value": "悬疑",
+                    "key": "%D0%FC%D2%C9"
+                },
+                {
+                    "value": "犯罪",
+                    "key": "%B7%B8%D7%EF"
+                },
+                {
+                    "value": "复仇",
+                    "key": "%B8%B4%B3%F0"
+                },
+                {
+                    "value": "黑暗",
+                    "key": "%BA%DA%B0%B5"
+                },
+                {
+                    "value": "猎奇",
+                    "key": "%C1%D4%C6%E6"
+                },
+                {
+                    "value": "惊悚",
+                    "key": "%BE%AA%E3%A4"
+                },
+                {
+                    "value": "间谍",
+                    "key": "%BC%E4%B5%FD"
+                },
+                {
+                    "value": "末日",
+                    "key": "%C4%A9%C8%D5"
+                },
+                {
+                    "value": "游戏",
+                    "key": "%D3%CE%CF%B7"
+                },
+                {
+                    "value": "大逃杀",
+                    "key": "%B4%F3%CC%D3%C9%B1"
+                }
+            ]
+        },
+        {
+            "title": "人物属性类Tags",
+            "page": 1,
+            "size": 20,
+            "url": "https://www.wenku8.cc/modules/article/tags.php?t=${key}",
+            "categories": [
+                {
+                    "value": "青梅竹马",
+                    "key": "%C7%E0%C3%B7%D6%F1%C2%ED"
+                },
+                {
+                    "value": "妹妹",
+                    "key": "%C3%C3%C3%C3"
+                },
+                {
+                    "value": "女儿",
+                    "key": "%C5%AE%B6%F9"
+                },
+                {
+                    "value": "JK",
+                    "key": "JK"
+                },
+                {
+                    "value": "JC",
+                    "key": "JC"
+                },
+                {
+                    "value": "大小姐",
+                    "key": "%B4%F3%D0%A1%BD%E3"
+                },
+                {
+                    "value": "性转",
+                    "key": "%D0%D4%D7%AA"
+                },
+                {
+                    "value": "伪娘",
+                    "key": "%CE%B1%C4%EF"
+                },
+                {
+                    "value": "人外",
+                    "key": "%C8%CB%CD%E2"
+                }
+            ]
+        },
+        {
+            "title": "特殊属性类Tags",
+            "page": 1,
+            "size": 20,
+            "url": "https://www.wenku8.cc/modules/article/tags.php?t=${key}",
+            "categories": [
+                {
+                    "value": "后宫",
+                    "key": "%BA%F3%B9%AC"
+                },
+                {
+                    "value": "百合",
+                    "key": "%B0%D9%BA%CF"
+                },
+                {
+                    "value": "耽美",
+                    "key": "%B5%A2%C3%C0"
+                },
+                {
+                    "value": "NTR",
+                    "key": "NTR"
+                },
+                {
+                    "value": "女性视角",
+                    "key": "%C5%AE%D0%D4%CA%D3%BD%C7"
+                }
+            ]
+        },
+        {
+            "title": "我的书架",
+            "page": 1,
+            "size": 20,
+            "url": "https://www.wenku8.cc/modules/article/bookcase.php?classid=${key}",
+            "categories": [
+                {
+                    "value": "默认书架",
+                    "key": "0"
+                },
+                {
+                    "value": "第1组书架",
+                    "key": "1"
+                },
+                {
+                    "value": "第2组书架",
+                    "key": "2"
+                },
+                {
+                    "value": "第3组书架",
+                    "key": "3"
+                },
+                {
+                    "value": "第4组书架",
+                    "key": "4"
+                },
+                {
+                    "value": "第5组书架",
+                    "key": "5"
                 }
             ]
         }
