@@ -3,14 +3,14 @@
     "url": "www.esjzone.cc",
     "version": 100,
     "search": {
-        "url": "https://www.esjzone.cc/tags/${key}/",
+        "url": "https://www.esjzone.cc/tags/${key}/${page}.html",
         "charset": "utf-8",
-        "list": "div.col-xl-9 > div.row>div",
-        "name": " div > div > h5 > a",
-        "author": "div>div.card-body > div.card-author > a",
+        "list": "div.col-lg-3, tbody > tr",
+        "name": " h5 > a",
+        "author": "div.card-author > a",
         "summary": "",
-        "cover": "div>div>a>div>div>div@attr->data-src",
-        "detail": "div> div > div > h5 > a@attr->href"
+        "cover": "div.lazyload@attr->data-src",
+        "detail": "h5 > a@attr->href"
     },
     "detail": {
         "name": "div.col-md-9.book-detail > h2",
@@ -23,7 +23,11 @@
         "catalog": ""
     },
     "catalog": {
-        "list": "div[id=chapterList]>*",
+        "list": "div[id=chapterList]>details, div#chapterList",
+        "booklet": {
+            "name": "summary",
+            "list": "a"
+        },
         "name": "a",
         "chapter": "a@attr->href"
     },
@@ -33,178 +37,178 @@
     "auth": {
         "login": "https://www.esjzone.cc/my/login",
         "cookie": ".esjzone.cc",
-        "verify": "https://www.esjzone.cc/my/profile",
-        "logged": "li.has-children:nth-child(2) > span:nth-child(1) > a:nth-child(1) > span:nth-child(1)@equal->會員專區"
+        "verify": "https://www.esjzone.cc/my/profile.html",
+        "logged": "div.column > h1@equal->会员专区"
     },
     "rank": [
         {
             "title": "全部",
             "page": 1,
-            "size": 20,
-            "url": "https://www.esjzone.cc/${key}/${page}.html",
+            "size": 40,
+            "url": "https://www.esjzone.cc/list-${key}/${page}.html",
             "categories": [
                 {
                     "value": "最近更新",
-                    "key": "list-01"
+                    "key": "01"
                 },
                 {
                     "value": "最新上架",
-                    "key": "list-02"
+                    "key": "02"
                 },
                 {
                     "value": "最高评分",
-                    "key": "list-03"
+                    "key": "03"
                 },
                 {
                     "value": "最多观看",
-                    "key": "list-04"
+                    "key": "04"
                 },
                 {
                     "value": "最多文章",
-                    "key": "list-05"
+                    "key": "05"
                 },
                 {
                     "value": "最多讨论",
-                    "key": "list-06"
+                    "key": "06"
                 },
                 {
                     "value": "最多收藏",
-                    "key": "list-07"
+                    "key": "07"
                 },
                 {
                     "value": "最多字数",
-                    "key": "list-08"
+                    "key": "08"
                 }
             ]
         },
         {
             "title": "日轻",
             "page": 1,
-            "size": 20,
-            "url": "https://www.esjzone.cc/${key}/${page}.html",
+            "size": 40,
+            "url": "https://www.esjzone.cc/list-${key}/${page}.html",
             "categories": [
                 {
                     "value": "最近更新",
-                    "key": "list-11"
+                    "key": "11"
                 },
                 {
                     "value": "最新上架",
-                    "key": "list-12"
+                    "key": "12"
                 },
                 {
                     "value": "最高评分",
-                    "key": "list-13"
+                    "key": "13"
                 },
                 {
                     "value": "最多观看",
-                    "key": "list-14"
+                    "key": "14"
                 },
                 {
                     "value": "最多文章",
-                    "key": "list-15"
+                    "key": "15"
                 },
                 {
                     "value": "最多讨论",
-                    "key": "list-16"
+                    "key": "16"
                 },
                 {
                     "value": "最多收藏",
-                    "key": "list-17"
+                    "key": "17"
                 },
                 {
                     "value": "最多字数",
-                    "key": "list-18"
+                    "key": "18"
                 }
             ]
         },
         {
             "title": "原创",
             "page": 1,
-            "size": 20,
-            "url": "https://www.esjzone.cc/${key}/${page}.html",
+            "size": 40,
+            "url": "https://www.esjzone.cc/list-${key}/${page}.html",
             "categories": [
                 {
                     "value": "最近更新",
-                    "key": "list-21"
+                    "key": "21"
                 },
                 {
                     "value": "最新上架",
-                    "key": "list-22"
+                    "key": "22"
                 },
                 {
                     "value": "最高评分",
-                    "key": "list-23"
+                    "key": "23"
                 },
                 {
                     "value": "最多观看",
-                    "key": "list-24"
+                    "key": "24"
                 },
                 {
                     "value": "最多文章",
-                    "key": "list-25"
+                    "key": "25"
                 },
                 {
                     "value": "最多讨论",
-                    "key": "list-26"
+                    "key": "26"
                 },
                 {
                     "value": "最多收藏",
-                    "key": "list-27"
+                    "key": "27"
                 },
                 {
                     "value": "最多字数",
-                    "key": "list-28"
+                    "key": "28"
                 }
             ]
         },
         {
             "title": "韩轻",
             "page": 1,
-            "size": 20,
-            "url": "https://www.esjzone.cc/${key}/${page}.html",
+            "size": 40,
+            "url": "https://www.esjzone.cc/list-${key}/${page}.html",
             "categories": [
                 {
                     "value": "最近更新",
-                    "key": "list-31"
+                    "key": "31"
                 },
                 {
                     "value": "最新上架",
-                    "key": "list-32"
+                    "key": "32"
                 },
                 {
                     "value": "最高评分",
-                    "key": "list-33"
+                    "key": "33"
                 },
                 {
                     "value": "最多观看",
-                    "key": "list-34"
+                    "key": "34"
                 },
                 {
                     "value": "最多文章",
-                    "key": "list-35"
+                    "key": "35"
                 },
                 {
                     "value": "最多讨论",
-                    "key": "list-36"
+                    "key": "36"
                 },
                 {
                     "value": "最多收藏",
-                    "key": "list-37"
+                    "key": "37"
                 },
                 {
                     "value": "最多字数",
-                    "key": "list-38"
+                    "key": "38"
                 }
             ]
         },
         {
             "title": "分类",
             "page": 1,
-            "size": 20,
+            "size": 40,
             "url": "https://www.esjzone.cc/tags/${key}/${page}.html",
             "categories": [
                 {
-                    "value": "r15",
+                    "value": "R15",
                     "key": "R15"
                 },
                 {
@@ -280,7 +284,7 @@
                     "key": "主角"
                 },
                 {
-                    "value": "r18",
+                    "value": "R18",
                     "key": "R18"
                 },
                 {
@@ -298,6 +302,22 @@
                 {
                     "value": "百合",
                     "key": "百合"
+                }
+            ]
+        },
+        {
+            "title": "个人中心",
+            "page": 1,
+            "size": 20,
+            "url": "https://www.esjzone.cc/my/${key}/${page}.html",
+            "categories": [
+                {
+                    "value": "我的收藏",
+                    "key": "favorite"
+                },
+                {
+                    "value": "观看记录",
+                    "key": "view"
                 }
             ]
         }
