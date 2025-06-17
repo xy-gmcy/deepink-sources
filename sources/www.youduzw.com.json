@@ -3,13 +3,13 @@
     "url": "www.youduzw.com",
     "version": 100,
     "search": {
-        "url": "https://www.youduzw.com/sa/all-${key}-${page}.html",
-        "charset": "uft-8",
-        "list": "li.g_col_6",
-        "name": "div > a > h2",
-        "author": "div > p > strong > span",
-        "cover": "div > a > i > img@attr->_src",
-        "detail": "div > a@attr->href"
+        "url": "https://www.youduzw.com/sa@post->searchtype=all&searchkey=${key}&page=${page}",
+        "charset": "utf-8",
+        "list": "li#hism, li.g_col_6",
+        "name": "h3 > a > span, div > a > h2",
+        "author": "em > span:nth-child(4), div > p > strong:nth-child(1) > span",
+        "cover": "img@attr->_src",
+        "detail": "a@attr->href"
     },
     "detail": {
         "name": "meta[property=og:novel:book_name]@attr->content",
@@ -24,6 +24,10 @@
     "catalog": {
         "list": "#chapterList > li",
         "orderBy": 0,
+        "booklet": {
+            "name": "li.volumes",
+            "list": "li.w33p"
+        },
         "name": "a",
         "chapter": "a"
     },
